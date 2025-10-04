@@ -17,7 +17,7 @@ jobs:
         id: cache-step
         uses: actions/cache@v4
         with:
-          path: ~/.cache   # example path
+          path: ~/.cache
           key: cache-b29f931
 
       - name: prime-cache-b29f931
