@@ -22,3 +22,4 @@ jobs:
 
       - name: prime-cache-b29f931
         run: echo "Cache result: ${{ steps.cache-step.outputs.cache-hit }}"
+        shell: bash
