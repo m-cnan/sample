@@ -21,10 +21,12 @@ jobs:
           path: ~/.cache
           key: cache-b29f931
 
-      # Prime cache step (name must match exactly)
+      # Prime cache step (multi-line syntax)
       - name: prime-cache-b29f931
-        run: echo "Cache result: ${{ steps.cache-step.outputs.cache-hit }}"
+        run: |
+          echo "Cache result: ${{ steps.cache-step.outputs.cache-hit }}"
 
       # Step with your email in the name
       - name: 24f2001467@ds.study.iitm.ac.in
-        run: echo "Hello, world!"
+        run: |
+          echo "Hello, world!"
